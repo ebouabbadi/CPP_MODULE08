@@ -16,9 +16,10 @@ public:
     Span(unsigned int N);
     Span(const Span &c);
     Span &operator=(const Span &c);
-    int operator[](int index);
+    int operator[](unsigned int index);
     void addNumber(int Number);
     int longestSpan();
+    int shortestSpan();
     ~Span();
 };
 

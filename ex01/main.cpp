@@ -1,18 +1,20 @@
 #include "Span.hpp"
 
-
-int main(int ac, char **av)
+int main()
 {
-    if (ac < 2)
-        return (0);
-    Span abdo(10);
-    for (size_t i = 0; av[i]; i++)
+    Span abdo(4);
+    try
     {
-        abdo.addNumber(atoi(av[i]));
+        abdo.addNumber(-12);
+        abdo.addNumber(98);
+        abdo.addNumber(21);
+        abdo.addNumber(2);
+        abdo.addNumber(2);
+        std::cout << abdo.longestSpan() << std::endl;
+        std::cout << abdo.shortestSpan() << std::endl;
     }
-    for (size_t i = 0; i < ac; i++)
+    catch (const char *s)
     {
-        std::cout<<abdo[i]<<std::endl;
+        std::cout << s << std::endl;
     }
-    return (0);
 }
