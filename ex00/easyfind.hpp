@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   easyfind.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ebouabba <ebouabba@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/28 17:01:12 by ebouabba          #+#    #+#             */
+/*   Updated: 2023/01/28 17:01:12 by ebouabba         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef EASYFIND_HPP
 #define EASYFIND_HPP
 
@@ -6,7 +18,6 @@
 #include <vector>
 #include <list>
 #include <deque>
-#include <forward_list>
 #include <stack>
 #include <map>
 
