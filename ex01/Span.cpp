@@ -40,7 +40,7 @@ Span::~Span()
 void Span::addNumber(int Number)
 {
     if (this->vect.size() == this->N)
-        throw "this finish";
+        throw "list is full";
     this->vect.push_back(Number);
 }
 int Span::operator[](unsigned int index)
@@ -53,7 +53,7 @@ int Span::operator[](unsigned int index)
 int Span::longestSpan()
 {
     if (this->vect.size() < 2)
-        throw("problem");
+        throw("list is empty");
     std::vector<int>::iterator it = this->vect.begin();
     std::vector<int>::iterator it_end = this->vect.end();
     int max = *it;
@@ -71,7 +71,7 @@ int Span::longestSpan()
 int Span::shortestSpan()
 {
     if (this->vect.size() < 2)
-        throw("problem");
+        throw("list is empty");
     std::vector<int>::iterator it0 = this->vect.begin();
     std::vector<int>::iterator it;
     std::vector<int>::iterator it_end = this->vect.end();
